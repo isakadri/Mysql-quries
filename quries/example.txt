@@ -2,3 +2,4 @@ create database employee;
 use employee;
 create table record(id int PRIMARY KEY,name VARCHAR(20),age int NOT NULL);
 INSERT INTO record(1,'isa',21),(2,'suraj',24),(3,'ram',25);
+select * from record;
