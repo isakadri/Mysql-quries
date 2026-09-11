@@ -1,2 +1,3 @@
 create database employee;
 use employee;
+create table record(id int PRIMARY KEY,name VARCHAR(20),age int NOT NULL);
