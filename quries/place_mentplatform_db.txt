@@ -1,0 +1,5 @@
+USE placement_platform;
+
+SELECT id, name, email, role
+FROM users
+WHERE email = 'recruiter@tcs.com';
