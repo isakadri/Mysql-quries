@@ -1,0 +1,5 @@
+use empData;
+select*from employee;
+
+insert into department values (1,"Rahul");
+select*from department;
