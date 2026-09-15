@@ -103,3 +103,43 @@ mysql> select description ,title ,salary from jobs where minimum_cgpa=6.5;
 +-----------------------------------------------------------------------+------------------------+--------+
 2 rows in set (0.03 sec)
 
+mysql> select description ,title ,salary from jobs where minimum_cgpa=6.5;
++-----------------------------------------------------------------------+------------------------+--------+
+| description                                                           | title                  | salary |
++-----------------------------------------------------------------------+------------------------+--------+
+| Develop and maintain backend applications using Java and Spring Boot. | Java Backend Developer | 600000 |
+| Build REST APIs and backend services using Spring Boot.               | Spring Boot Developer  | 700000 |
++-----------------------------------------------------------------------+------------------------+--------+
+2 rows in set (0.03 sec)
+
+mysql> select MAX(salary) as second_highestSal from jobs where (select MAX(salary) from jobs);
++-------------------+
+| second_highestSal |
++-------------------+
+|            700000 |
++-------------------+
+1 row in set (0.03 sec)
+
+mysql> select MAX(salary) as second_highestSal from jobs where salary < (select MAX(salary) from jobs);
++-------------------+
+| second_highestSal |
++-------------------+
+|            600000 |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> select title from jobs where required_skills LIKE %J;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%J' at line 1
+mysql> select title from jobs where required_skills LIKE '%J';
+Empty set (0.00 sec)
+
+mysql> select title from jobs where required_skills LIKE 'J%';
++------------------------+
+| title                  |
++------------------------+
+| Java Backend Developer |
+| Spring Boot Developer  |
++------------------------+
+2 rows in set (0.00 sec)
+
+mysql>
