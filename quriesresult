@@ -94,4 +94,12 @@ mysql> select * from jobs where location='pune';
 +----+-----------------------------------------------------------------------+---------------------+-----------+----------+--------------+------------------------------------+--------+------------------------+------------+
 1 row in set (0.00 sec)
 
-mysql>
+mysql> select description ,title ,salary from jobs where minimum_cgpa=6.5;
++-----------------------------------------------------------------------+------------------------+--------+
+| description                                                           | title                  | salary |
++-----------------------------------------------------------------------+------------------------+--------+
+| Develop and maintain backend applications using Java and Spring Boot. | Java Backend Developer | 600000 |
+| Build REST APIs and backend services using Spring Boot.               | Spring Boot Developer  | 700000 |
++-----------------------------------------------------------------------+------------------------+--------+
+2 rows in set (0.03 sec)
+
