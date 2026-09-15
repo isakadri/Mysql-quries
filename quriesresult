@@ -67,4 +67,14 @@ mysql> select * from applications
 +----+--------------+-------------+--------+------------+
 2 rows in set (0.00 sec)
 
+select * from jobs;
++----+-----------------------------------------------------------------------+---------------------+-----------+----------+--------------+------------------------------------+--------+------------------------+------------+
+| id | description                                                           | experience_required | job_type  | location | minimum_cgpa | required_skills                    | salary | title                  | company_id |
++----+-----------------------------------------------------------------------+---------------------+-----------+----------+--------------+------------------------------------+--------+------------------------+------------+
+|  1 | Develop and maintain backend applications using Java and Spring Boot. |                   0 | Full Time | Pune     |          6.5 | Java, Spring Boot, MySQL, REST API | 600000 | Java Backend Developer |          1 |
+|  2 | Build REST APIs and backend services using Spring Boot.               |                   0 | Full Time | Mumbai   |          6.5 | Java, Spring Boot, JPA, MySQL      | 700000 | Spring Boot Developer  |          1 |
++----+-----------------------------------------------------------------------+---------------------+-----------+----------+--------------+------------------------------------+--------+------------------------+------------+
+2 rows in set (0.00 sec)
+
 mysql>
+
