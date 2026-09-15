@@ -1,0 +1,45 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| chat_db            |
+| crud_blog          |
+| empdata            |
+| employee           |
+| employee1          |
+| information_schema |
+| mydb1              |
+| mydetails          |
+| mysql              |
+| mystudent          |
+| performance_schema |
+| placement_platform |
+| std                |
+| std_network        |
+| student_crud_db    |
+| student_network    |
+| sys                |
++--------------------+
+17 rows in set (0.01 sec)
+
+mysql> use mydb1;
+Database changed
+mysql> show tables;
++-----------------+
+| Tables_in_mydb1 |
++-----------------+
+| department      |
+| info            |
++-----------------+
+2 rows in set (0.00 sec)
+
+mysql> select *from info;
++-----+---------+---------+-------------+------+-------+----------+
+| id  | Names   | Address | subject     | age  | marks | Lastname |
++-----+---------+---------+-------------+------+-------+----------+
+| 101 | Samreen | Latur   | programming | NULL |     0 |          |
+| 102 | Jimmy   | Latur   | java        | NULL |     0 |          |
++-----+---------+---------+-------------+------+-------+----------+
+2 rows in set (0.06 sec)
+
+mysql>
